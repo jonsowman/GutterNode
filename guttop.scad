@@ -21,12 +21,12 @@ module screw(){
 
 translate([GUT_HEIGHT + 1,22,12]){
     rotate([0,90,0]){
-        cylinder(h = WALL_THICKNESS + 2, r = 1.5,center=false);
+        cylinder(h = WALL_THICKNESS + 2, r = HOLE_R,center=false);
         }
         }
 translate([GUT_HEIGHT + 1,(GUT_WIDTH - 22),12]){
         rotate([0,90,0]){
-            cylinder(h = WALL_THICKNESS + 2, r = 1.5,center=false);
+            cylinder(h = WALL_THICKNESS + 2, r = HOLE_R,center=false);
         }
     }
 
