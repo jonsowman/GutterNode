@@ -20,7 +20,7 @@ difference(){
 }
 // clips
 module clips(){
-        translate([-10,17,0]){
+        translate([-10,27,0]){
         difference(){
         cube([10,10,8]);
             translate([2,-5,3]){
@@ -28,7 +28,7 @@ module clips(){
             }
         }
     }
-         translate([-10,(GUT_WIDTH - 27),0]){
+         translate([-10,(GUT_WIDTH - 37),0]){
         difference(){
         cube([10,10,8]);
             translate([2,-5,3]){
@@ -42,23 +42,23 @@ module clips(){
 //screw holes
 module screw(){
 
-translate([GUT_HEIGHT + 1,22,12]){
+translate([GUT_HEIGHT + 1,32,12]){
     rotate([0,90,0]){
         cylinder(h = WALL_THICKNESS + 2, r = HOLE_R,center=false);
         }
         }
-translate([GUT_HEIGHT + 1,(GUT_WIDTH - 22),12]){
+translate([GUT_HEIGHT + 1,(GUT_WIDTH - 32),12]){
         rotate([0,90,0]){
             cylinder(h = WALL_THICKNESS + 2, r = HOLE_R,center=false);
         }
     }
 
-translate([-1,22,12]){
+translate([-1,32,12]){
     rotate([0,90,0]){
         cylinder(h = WALL_THICKNESS + 2, r = HOLE_R,center=false);
         }
         }
-translate([-1,(GUT_WIDTH - 22),12]){
+translate([-1,(GUT_WIDTH - 32),12]){
         rotate([0,90,0]){
             cylinder(h = WALL_THICKNESS + 2, r = HOLE_R,center=false);
         }
