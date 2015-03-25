@@ -23,16 +23,16 @@ module clips(){
         translate([-10,17,0]){
         difference(){
         cube([10,10,8]);
-            translate([6,-5,3]){
-                cube([2,20,12]);
+            translate([2,-5,3]){
+                cube([4,20,12]);
             }
         }
     }
          translate([-10,(GUT_WIDTH - 27),0]){
         difference(){
         cube([10,10,8]);
-            translate([6,-5,3]){
-                cube([2,20,12]);
+            translate([2,-5,3]){
+                cube([4,20,12]);
             }
         }
     }
