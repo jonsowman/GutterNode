@@ -7,6 +7,7 @@ HOLE_R = 2;
 
 //cube([GUT_WIDTH, GUT_LIP, GUT_HEIGHT]);
 
+union(){
 difference(){
     cube([GUT_HEIGHT + (WALL_THICKNESS * 2), GUT_WIDTH + (WALL_THICKNESS * 2), GUT_TOP], center=false);
     translate([2,2,2]){
@@ -15,6 +16,28 @@ difference(){
     //create screw holes
     screw();
 }
+    clips();
+}
+// clips
+module clips(){
+        translate([-10,17,0]){
+        difference(){
+        cube([10,10,8]);
+            translate([6,-5,3]){
+                cube([2,20,12]);
+            }
+        }
+    }
+         translate([-10,(GUT_WIDTH - 27),0]){
+        difference(){
+        cube([10,10,8]);
+            translate([6,-5,3]){
+                cube([2,20,12]);
+            }
+        }
+    }
+}
+
 
 //screw holes
 module screw(){
