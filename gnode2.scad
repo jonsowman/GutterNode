@@ -1,7 +1,8 @@
-GUT_WIDTH = 122;
-GUT_HEIGHT = 50;
+GUT_WIDTH = 124;
+GUT_HEIGHT = 51;
 WALL_THICKNESS = 2;
 GUT_LIP = 10;
+HOLE_R = 2;
 
 difference(){
     union(){
@@ -40,9 +41,9 @@ module screw(){
 //    cylinder(h = 3, r = 1.5,center=false);
 //}
 translate([(GUT_WIDTH / 2 - 20),(GUT_LIP - 10),-1]){
-    cylinder(h = WALL_THICKNESS + 2, r = 1.5,center=false);
+    cylinder(h = WALL_THICKNESS + 2, r = HOLE_R,center=false);
 }
 translate([-(GUT_WIDTH / 2 - 20),(GUT_LIP - 10),-1]){
-    cylinder(h = WALL_THICKNESS + 2, r = 1.5,center=false);
+    cylinder(h = WALL_THICKNESS + 2, r = HOLE_R,center=false);
 }
 }
