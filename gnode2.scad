@@ -29,6 +29,27 @@ difference(){
     }
     //create screw holes
     screw();
+    
+    translate([0,0.5,(GUT_HEIGHT - 3)]){
+        smallpanel();
+    }
+}
+
+//sidepanel();
+
+module sidepanel(){
+translate([0,0.5,(GUT_HEIGHT - 3)]){
+    difference(){
+        smallpanel();
+        translate([-(GUT_WIDTH / 2),0,-1]) {
+            cube([GUT_WIDTH, GUT_WIDTH / 2, GUT_WIDTH + 4]);
+            }
+        
+    }
+    }
+}
+module smallpanel(){
+            cylinder(h = WALL_THICKNESS, r = GUT_WIDTH / 2, center=false);
 }
 
 //screw holes

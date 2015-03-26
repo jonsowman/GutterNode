@@ -3,6 +3,7 @@ GUT_HEIGHT = 50;
 WALL_THICKNESS = 2;
 GUT_LIP = 10;
 
+module smallpanel(){
 difference(){
     union(){
         difference(){
@@ -17,22 +18,13 @@ difference(){
             }
         }
     //create screw holes
-    screw();
-}
-
-//screw holes
-module screw(){
-
-//translate([GUT_WIDTH / 2 - 20,GUT_WIDTH / 2 - 6,GUT_HEIGHT - 2]){
-//    cylinder(h = 3, r = 1.5,center=false);
-//}
-//translate([-(GUT_WIDTH / 2 - 20),(GUT_WIDTH / 2 - 6),GUT_HEIGHT - 2]){
-//    cylinder(h = 3, r = 1.5,center=false);
-//}
-translate([((GUT_WIDTH / 2) - 20),(GUT_LIP - 10),-1]){
+    translate([((GUT_WIDTH / 2) - 20),(GUT_LIP - 10),-1]){
     cylinder(h = WALL_THICKNESS + 2, r = 1.5,center=false);
 }
 translate([-(GUT_WIDTH / 2 - 20),(GUT_LIP - 10),-1]){
     cylinder(h = WALL_THICKNESS + 2, r = 1.5,center=false);
 }
 }
+}
+
+smallpanel();
