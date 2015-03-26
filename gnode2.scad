@@ -1,6 +1,6 @@
-GUT_WIDTH = 124;
-GUT_HEIGHT = 51;
-WALL_THICKNESS = 2;
+GUT_WIDTH = 122;
+GUT_HEIGHT = 50;
+WALL_THICKNESS = 1;
 GUT_LIP = 10;
 HOLE_R = 2;
 
@@ -40,10 +40,10 @@ module screw(){
 //translate([-(GUT_WIDTH / 2 - 20),(GUT_WIDTH / 2 - 6),GUT_HEIGHT - 2]){
 //    cylinder(h = 3, r = 1.5,center=false);
 //}
-translate([(GUT_WIDTH / 2 - 20),(GUT_LIP - 10),-1]){
+translate([30,(GUT_LIP - 5),-1]){
     cylinder(h = WALL_THICKNESS + 2, r = HOLE_R,center=false);
 }
-translate([-(GUT_WIDTH / 2 - 20),(GUT_LIP - 10),-1]){
+translate([-30,(GUT_LIP - 5),-1]){
     cylinder(h = WALL_THICKNESS + 2, r = HOLE_R,center=false);
 }
 }
