@@ -65,5 +65,5 @@ translate([-31,(GUT_LIP - 15),-1]){
 }
 }
 
-mainbox();
-//sidepanel();
+//mainbox();
+sidepanel();
