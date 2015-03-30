@@ -1891,6 +1891,11 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="JP2" library="Mine" deviceset="M02" device="PTH"/>
 <part name="GND10" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND11" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="R2" library="passives-7351" deviceset="RESISTOR" device="0603-N" value="3k6"/>
+<part name="SUPPLY6" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
+<part name="GND12" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="R3" library="passives-7351" deviceset="RESISTOR" device="0603-N" value="100k"/>
+<part name="R4" library="passives-7351" deviceset="RESISTOR" device="0603-N" value="100k"/>
 </parts>
 <sheets>
 <sheet>
@@ -1926,6 +1931,11 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <instance part="JP2" gate="G$1" x="17.78" y="139.7"/>
 <instance part="GND10" gate="1" x="33.02" y="142.24" rot="R90"/>
 <instance part="GND11" gate="1" x="96.52" y="96.52"/>
+<instance part="R2" gate="G$1" x="119.38" y="109.22" rot="R90"/>
+<instance part="SUPPLY6" gate="G$1" x="45.72" y="109.22"/>
+<instance part="GND12" gate="1" x="45.72" y="86.36"/>
+<instance part="R3" gate="G$1" x="45.72" y="104.14" rot="R90"/>
+<instance part="R4" gate="G$1" x="45.72" y="93.98" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -2016,7 +2026,21 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <segment>
 <pinref part="U$4" gate="G$1" pin="GND"/>
 <pinref part="GND11" gate="1" pin="GND"/>
-<wire x1="96.52" y1="104.14" x2="96.52" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="104.14" x2="96.52" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="P$1"/>
+<wire x1="96.52" y1="101.6" x2="96.52" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="104.14" x2="119.38" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="101.6" x2="96.52" y2="101.6" width="0.1524" layer="91"/>
+<junction x="96.52" y="101.6"/>
+<pinref part="U$4" gate="G$1" pin="TEMP"/>
+<wire x1="111.76" y1="119.38" x2="124.46" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="119.38" x2="124.46" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="101.6" x2="119.38" y2="101.6" width="0.1524" layer="91"/>
+<junction x="119.38" y="101.6"/>
+</segment>
+<segment>
+<pinref part="GND12" gate="1" pin="GND"/>
+<pinref part="R4" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -2175,6 +2199,10 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <wire x1="30.48" y1="-12.7" x2="33.02" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="-12.7" x2="33.02" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="SUPPLY6" gate="G$1" pin="VCC"/>
+<pinref part="R3" gate="G$1" pin="P$2"/>
+</segment>
 </net>
 <net name="VBATT" class="0">
 <segment>
@@ -2246,6 +2274,27 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <wire x1="73.66" y1="134.62" x2="73.66" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="U$4" gate="G$1" pin="VIN"/>
 <wire x1="73.66" y1="142.24" x2="96.52" y2="142.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="U$4" gate="G$1" pin="ISET"/>
+<pinref part="R2" gate="G$1" pin="P$2"/>
+<wire x1="111.76" y1="114.3" x2="119.38" y2="114.3" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VSENSE" class="0">
+<segment>
+<pinref part="U1" gate="U$1" pin="PC0(ADC0)"/>
+<wire x1="12.7" y1="66.04" x2="15.24" y2="66.04" width="0.1524" layer="91"/>
+<label x="15.24" y="66.04" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R3" gate="G$1" pin="P$1"/>
+<pinref part="R4" gate="G$1" pin="P$2"/>
+<wire x1="45.72" y1="99.06" x2="50.8" y2="99.06" width="0.1524" layer="91"/>
+<junction x="45.72" y="99.06"/>
+<label x="50.8" y="99.06" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>

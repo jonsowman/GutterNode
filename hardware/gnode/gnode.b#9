@@ -158,6 +158,7 @@
 <wire x1="50" y1="25" x2="0" y2="25" width="0" layer="20"/>
 <hole x="4" y="22" drill="4"/>
 <hole x="46" y="22" drill="4"/>
+<text x="10.414" y="10.16" size="1.778" layer="21" font="vector" ratio="15" rot="MR0">+</text>
 </plain>
 <libraries>
 <library name="hoperf">
@@ -765,6 +766,8 @@ design rules under a new name.</description>
 <element name="TP2" library="testpad" package="B1,27" value="PTR1B1,27" x="12.954" y="4.826">
 <attribute name="TP_SIGNAL_NAME" value="" x="12.954" y="4.826" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
+<element name="R5" library="passives-7351" package="R0603-N" value="100k" x="18.034" y="5.08"/>
+<element name="R6" library="passives-7351" package="R0603-N" value="100k" x="18.034" y="3.048" rot="R180"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -803,7 +806,7 @@ design rules under a new name.</description>
 <wire x1="12.23" y1="15.748" x2="12.23" y2="18.034" width="0" layer="19" extent="1-1"/>
 <wire x1="15.875" y1="14.538" x2="12.23" y2="15.748" width="0" layer="19" extent="1-1"/>
 <wire x1="18.415" y1="14.538" x2="15.875" y2="14.538" width="0" layer="19" extent="1-1"/>
-<wire x1="5.388009375" y1="15.62300625" x2="9.99" y2="20.894" width="0" layer="19" extent="1-1"/>
+<wire x1="5.388009375" y1="15.62300625" x2="12.23" y2="15.748" width="0" layer="19" extent="1-1"/>
 <wire x1="36.576" y1="4.85" x2="38.862" y2="12.7" width="0" layer="19" extent="1-1"/>
 <wire x1="10.17805" y1="7.601946875" x2="12.23" y2="15.748" width="0" layer="19" extent="1-1"/>
 <wire x1="27.578" y1="8.1534" x2="26.778" y2="16.7386" width="0" layer="19" extent="1-1"/>
@@ -872,9 +875,13 @@ design rules under a new name.</description>
 <contactref element="JP1" pad="2"/>
 <contactref element="U$3" pad="2"/>
 <contactref element="R3" pad="2"/>
+<contactref element="R5" pad="2"/>
+<contactref element="R6" pad="1"/>
 <wire x1="28.378" y1="8.1534" x2="29.178" y2="16.7386" width="0" layer="19" extent="1-1"/>
 <wire x1="26.778" y1="8.1534" x2="28.378" y2="8.1534" width="0" layer="19" extent="1-1"/>
 <wire x1="22.352" y1="4.826" x2="26.778" y2="8.1534" width="0" layer="19" extent="1-1"/>
+<wire x1="18.834" y1="5.08" x2="22.352" y2="4.826" width="0" layer="19" extent="1-1"/>
+<wire x1="18.834" y1="3.048" x2="18.834" y2="5.08" width="0" layer="19" extent="1-1"/>
 <wire x1="16.51" y1="22.644" x2="29.178" y2="16.7386" width="0" layer="19" extent="1-1"/>
 <wire x1="14.986" y1="22.0665" x2="16.51" y2="22.644" width="0" layer="19" extent="1-16"/>
 <wire x1="12.446" y1="22.644" x2="14.986" y2="22.0665" width="0" layer="19" extent="1-16"/>
@@ -888,7 +895,7 @@ design rules under a new name.</description>
 <contactref element="U$4" pad="8"/>
 <wire x1="10.63" y1="18.034" x2="7.79" y2="21.844" width="0" layer="19" extent="1-1"/>
 <wire x1="6.2959875" y1="13.840990625" x2="10.63" y2="18.034" width="0" layer="19" extent="1-1"/>
-<wire x1="14.605" y1="9.338" x2="10.63" y2="18.034" width="0" layer="19" extent="1-1"/>
+<wire x1="14.605" y1="9.338" x2="6.2959875" y2="13.840990625" width="0" layer="19" extent="1-1"/>
 <wire x1="18.415" y1="9.338" x2="14.605" y2="9.338" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SHT_SCK">
@@ -926,12 +933,16 @@ design rules under a new name.</description>
 <signal name="N$2">
 <contactref element="U$4" pad="7"/>
 <contactref element="TP1" pad="TP"/>
-<wire x1="14.732" y1="3.81" x2="17.145" y2="9.338" width="0" layer="19" extent="1-1"/>
+<contactref element="R5" pad="1"/>
+<wire x1="17.234" y1="5.08" x2="17.145" y2="9.338" width="0" layer="19" extent="1-1"/>
+<wire x1="14.732" y1="3.81" x2="17.234" y2="5.08" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$5">
 <contactref element="U$4" pad="6"/>
 <contactref element="TP2" pad="TP"/>
+<contactref element="R6" pad="2"/>
 <wire x1="12.954" y1="4.826" x2="15.875" y2="9.338" width="0" layer="19" extent="1-1"/>
+<wire x1="17.234" y1="3.048" x2="12.954" y2="4.826" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
