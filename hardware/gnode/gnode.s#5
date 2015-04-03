@@ -3346,6 +3346,7 @@ Note: The AM2302 is a wired version of the DHT-22 which typically requires less 
 <part name="U2" library="RHT03_DHT-22_AM2302" deviceset="RHT03_DHT-22_AM2302" device=""/>
 <part name="C3" library="passives-7351" deviceset="CAPACITOR" device="0603-N" value="100n"/>
 <part name="JP3" library="SparkFun-Connectors" deviceset="M04" device="PTH"/>
+<part name="C4" library="passives-7351" deviceset="CAPACITOR" device="0603-N" value="100n"/>
 </parts>
 <sheets>
 <sheet>
@@ -3396,6 +3397,7 @@ Note: The AM2302 is a wired version of the DHT-22 which typically requires less 
 <instance part="U2" gate="G$1" x="142.24" y="58.42"/>
 <instance part="C3" gate="G$1" x="-40.64" y="48.26"/>
 <instance part="JP3" gate="G$1" x="93.98" y="-15.24" rot="R180"/>
+<instance part="C4" gate="G$1" x="157.48" y="-7.62"/>
 </instances>
 <busses>
 </busses>
@@ -3462,6 +3464,10 @@ Note: The AM2302 is a wired version of the DHT-22 which typically requires less 
 <pinref part="IC1" gate="G$1" pin="GND"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 <wire x1="147.32" y1="-22.86" x2="147.32" y2="-25.4" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="157.48" y1="-12.7" x2="157.48" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="-22.86" x2="147.32" y2="-22.86" width="0.1524" layer="91"/>
+<junction x="147.32" y="-22.86"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="6"/>
@@ -3685,7 +3691,12 @@ Note: The AM2302 is a wired version of the DHT-22 which typically requires less 
 <segment>
 <pinref part="IC1" gate="G$1" pin="VDD"/>
 <pinref part="SUPPLY4" gate="G$1" pin="VCC"/>
-<wire x1="147.32" y1="5.08" x2="147.32" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="5.08" x2="147.32" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="10.16" x2="147.32" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="10.16" x2="157.48" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="10.16" x2="157.48" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="147.32" y="10.16"/>
+<pinref part="C4" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="JP3" gate="G$1" pin="1"/>

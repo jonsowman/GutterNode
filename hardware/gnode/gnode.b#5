@@ -167,13 +167,21 @@
 <text x="12.954" y="23.876" size="1.27" layer="22" font="vector" ratio="15" rot="MR270">J. SOWMAN</text>
 <text x="11.176" y="23.876" size="1.27" layer="22" font="vector" ratio="15" rot="MR270">J. COXON</text>
 <text x="9.398" y="23.876" size="1.27" layer="22" font="vector" ratio="15" rot="MR270">APR 15</text>
-<text x="43.434" y="18.542" size="1.27" layer="22" font="vector" ratio="15" rot="MR0">VCC</text>
-<text x="43.434" y="16.256" size="1.27" layer="22" font="vector" ratio="15" rot="MR0">GND</text>
+<text x="42.672" y="18.288" size="1.27" layer="22" font="vector" ratio="15" rot="MR0">VCC</text>
+<text x="42.672" y="16.256" size="1.27" layer="22" font="vector" ratio="15" rot="MR0">GND</text>
 <text x="36.322" y="11.684" size="1.27" layer="22" font="vector" ratio="15" rot="MR180">PC2</text>
 <text x="36.322" y="9.652" size="1.27" layer="22" font="vector" ratio="15" rot="MR180">PD6</text>
 <wire x1="40.132" y1="9.144" x2="40.64" y2="9.144" width="0.254" layer="22"/>
 <wire x1="40.64" y1="9.144" x2="41.148" y2="9.652" width="0.254" layer="22"/>
-<wire x1="40.132" y1="11.176" x2="41.91" y2="12.954" width="0.254" layer="22"/>
+<wire x1="42.926" y1="19.05" x2="43.434" y2="19.05" width="0.254" layer="22"/>
+<wire x1="43.434" y1="19.05" x2="44.45" y2="18.034" width="0.254" layer="22"/>
+<wire x1="42.926" y1="16.764" x2="43.434" y2="16.764" width="0.254" layer="22"/>
+<wire x1="43.434" y1="16.764" x2="43.942" y2="16.256" width="0.254" layer="22"/>
+<wire x1="40.132" y1="11.176" x2="40.386" y2="11.176" width="0.254" layer="22"/>
+<wire x1="40.386" y1="11.176" x2="41.402" y2="12.192" width="0.254" layer="22"/>
+<wire x1="41.402" y1="12.192" x2="41.402" y2="12.7" width="0.254" layer="22"/>
+<wire x1="41.402" y1="12.7" x2="41.656" y2="12.954" width="0.254" layer="22"/>
+<wire x1="41.656" y1="12.954" x2="41.91" y2="12.954" width="0.254" layer="22"/>
 </plain>
 <libraries>
 <library name="hoperf">

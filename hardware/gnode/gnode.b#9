@@ -169,8 +169,8 @@
 <text x="9.398" y="23.876" size="1.27" layer="22" font="vector" ratio="15" rot="MR270">APR 15</text>
 <text x="43.434" y="18.542" size="1.27" layer="22" font="vector" ratio="15" rot="MR0">VCC</text>
 <text x="43.434" y="16.256" size="1.27" layer="22" font="vector" ratio="15" rot="MR0">GND</text>
-<text x="36.322" y="10.668" size="1.27" layer="22" font="vector" ratio="15" rot="MR180">PC2</text>
-<text x="36.322" y="8.636" size="1.27" layer="22" font="vector" ratio="15" rot="MR180">PD6</text>
+<text x="36.322" y="11.684" size="1.27" layer="22" font="vector" ratio="15" rot="MR180">PC2</text>
+<text x="36.322" y="9.652" size="1.27" layer="22" font="vector" ratio="15" rot="MR180">PD6</text>
 </plain>
 <libraries>
 <library name="hoperf">

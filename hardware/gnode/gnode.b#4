@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -28,7 +28,7 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="16" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
@@ -173,11 +173,15 @@
 <text x="36.322" y="9.652" size="1.27" layer="22" font="vector" ratio="15" rot="MR180">PD6</text>
 <wire x1="40.132" y1="9.144" x2="40.64" y2="9.144" width="0.254" layer="22"/>
 <wire x1="40.64" y1="9.144" x2="41.148" y2="9.652" width="0.254" layer="22"/>
-<wire x1="40.132" y1="11.176" x2="41.91" y2="12.954" width="0.254" layer="22"/>
-<wire x1="42.926" y1="16.764" x2="42.926" y2="16.256" width="0.254" layer="22"/>
-<wire x1="42.926" y1="16.256" x2="43.307" y2="15.875" width="0.254" layer="22"/>
 <wire x1="42.926" y1="19.05" x2="43.434" y2="19.05" width="0.254" layer="22"/>
 <wire x1="43.434" y1="19.05" x2="44.45" y2="18.034" width="0.254" layer="22"/>
+<wire x1="42.926" y1="16.764" x2="43.434" y2="16.764" width="0.254" layer="22"/>
+<wire x1="43.434" y1="16.764" x2="43.942" y2="16.256" width="0.254" layer="22"/>
+<wire x1="40.132" y1="11.176" x2="40.386" y2="11.176" width="0.254" layer="22"/>
+<wire x1="40.386" y1="11.176" x2="41.402" y2="12.192" width="0.254" layer="22"/>
+<wire x1="41.402" y1="12.192" x2="41.402" y2="12.7" width="0.254" layer="22"/>
+<wire x1="41.402" y1="12.7" x2="41.656" y2="12.954" width="0.254" layer="22"/>
+<wire x1="41.656" y1="12.954" x2="41.91" y2="12.954" width="0.254" layer="22"/>
 </plain>
 <libraries>
 <library name="hoperf">
@@ -927,9 +931,9 @@ design rules under a new name.</description>
 <contactref element="JP3" pad="2"/>
 <contactref element="C4" pad="2"/>
 <via x="42.164" y="16.002" extent="1-16" drill="0.381"/>
-<via x="39.878" y="10.414" extent="1-16" drill="0.381"/>
-<via x="38.354" y="8.89" extent="1-16" drill="0.381"/>
-<via x="40.64" y="8.89" extent="1-16" drill="0.381"/>
+<via x="40.132" y="10.16" extent="1-16" drill="0.381"/>
+<via x="38.354" y="7.62" extent="1-16" drill="0.381"/>
+<via x="40.386" y="7.62" extent="1-16" drill="0.381"/>
 <via x="41.402" y="18.288" extent="1-16" drill="0.381"/>
 <via x="43.942" y="18.288" extent="1-16" drill="0.381"/>
 </signal>

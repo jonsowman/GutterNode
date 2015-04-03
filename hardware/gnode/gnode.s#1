@@ -496,6 +496,8 @@ This is a footprint for an edge mount RF antenna. Works pretty well with SMA typ
 <rectangle x1="0.39" y1="2" x2="0.88" y2="3.1" layer="51"/>
 <rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="51"/>
 <rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
+<wire x1="-2.4" y1="1.2" x2="-2.4" y2="-1.2" width="0.254" layer="21"/>
+<wire x1="2.4" y1="1.2" x2="2.4" y2="-1.2" width="0.254" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -3847,6 +3849,7 @@ Note: The AM2302 is a wired version of the DHT-22 which typically requires less 
 <segment>
 <pinref part="U1" gate="U$1" pin="PC2(ADC2)"/>
 <wire x1="12.7" y1="60.96" x2="15.24" y2="60.96" width="0.1524" layer="91"/>
+<label x="15.24" y="60.96" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP3" gate="G$1" pin="3"/>
