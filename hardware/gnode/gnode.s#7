@@ -496,6 +496,9 @@ This is a footprint for an edge mount RF antenna. Works pretty well with SMA typ
 <rectangle x1="0.39" y1="2" x2="0.88" y2="3.1" layer="51"/>
 <rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="51"/>
 <rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
+<wire x1="-2.4" y1="1.2" x2="-2.4" y2="-1.2" width="0.254" layer="21"/>
+<wire x1="2.4" y1="1.2" x2="2.4" y2="-1.2" width="0.254" layer="21"/>
+<circle x="-1.9" y="-1" radius="0.22360625" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -3347,6 +3350,9 @@ Note: The AM2302 is a wired version of the DHT-22 which typically requires less 
 <part name="C3" library="passives-7351" deviceset="CAPACITOR" device="0603-N" value="100n"/>
 <part name="JP3" library="SparkFun-Connectors" deviceset="M04" device="PTH"/>
 <part name="C4" library="passives-7351" deviceset="CAPACITOR" device="0603-N" value="100n"/>
+<part name="R9" library="passives-7351" deviceset="RESISTOR" device="0603-N"/>
+<part name="C5" library="passives-7351" deviceset="CAPACITOR" device="0603-N" value="100n"/>
+<part name="GND14" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3395,9 +3401,18 @@ Note: The AM2302 is a wired version of the DHT-22 which typically requires less 
 <instance part="R7" gate="G$1" x="76.2" y="101.6" rot="R90"/>
 <instance part="R8" gate="G$1" x="76.2" y="91.44" rot="R90"/>
 <instance part="U2" gate="G$1" x="142.24" y="58.42"/>
-<instance part="C3" gate="G$1" x="-40.64" y="48.26"/>
+<instance part="C3" gate="G$1" x="-40.64" y="48.26" smashed="yes">
+<attribute name="NAME" x="-38.1" y="48.26" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-38.1" y="43.18" size="1.778" layer="96"/>
+</instance>
 <instance part="JP3" gate="G$1" x="93.98" y="-15.24" rot="R180"/>
 <instance part="C4" gate="G$1" x="157.48" y="-7.62"/>
+<instance part="R9" gate="G$1" x="71.12" y="-20.32" rot="R90"/>
+<instance part="C5" gate="G$1" x="58.42" y="-20.32" smashed="yes">
+<attribute name="NAME" x="60.96" y="-20.32" size="1.778" layer="95"/>
+<attribute name="VALUE" x="60.96" y="-25.4" size="1.778" layer="96"/>
+</instance>
+<instance part="GND14" gate="1" x="58.42" y="-30.48"/>
 </instances>
 <busses>
 </busses>
@@ -3523,6 +3538,11 @@ Note: The AM2302 is a wired version of the DHT-22 which typically requires less 
 <pinref part="JP3" gate="G$1" pin="2"/>
 <wire x1="88.9" y1="-15.24" x2="86.36" y2="-15.24" width="0.1524" layer="91"/>
 <label x="86.36" y="-15.24" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="C5" gate="G$1" pin="2"/>
+<wire x1="58.42" y1="-25.4" x2="58.42" y2="-27.94" width="0.1524" layer="91"/>
+<pinref part="GND14" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -3854,6 +3874,11 @@ Note: The AM2302 is a wired version of the DHT-22 which typically requires less 
 <wire x1="88.9" y1="-17.78" x2="86.36" y2="-17.78" width="0.1524" layer="91"/>
 <label x="86.36" y="-17.78" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="R9" gate="G$1" pin="P$2"/>
+<wire x1="71.12" y1="-15.24" x2="71.12" y2="-12.7" width="0.1524" layer="91"/>
+<label x="71.12" y="-12.7" size="1.27" layer="95" rot="R90" xref="yes"/>
+</segment>
 </net>
 <net name="GPIO0" class="0">
 <segment>
@@ -3865,6 +3890,16 @@ Note: The AM2302 is a wired version of the DHT-22 which typically requires less 
 <pinref part="JP3" gate="G$1" pin="4"/>
 <wire x1="88.9" y1="-20.32" x2="86.36" y2="-20.32" width="0.1524" layer="91"/>
 <label x="86.36" y="-20.32" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R9" gate="G$1" pin="P$1"/>
+<wire x1="71.12" y1="-25.4" x2="71.12" y2="-27.94" width="0.1524" layer="91"/>
+<label x="71.12" y="-27.94" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="C5" gate="G$1" pin="1"/>
+<wire x1="58.42" y1="-17.78" x2="58.42" y2="-15.24" width="0.1524" layer="91"/>
+<label x="58.42" y="-15.24" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 </nets>
