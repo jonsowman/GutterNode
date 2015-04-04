@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -32,8 +32,8 @@
 <layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -56,7 +56,7 @@
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
@@ -837,22 +837,22 @@ design rules under a new name.</description>
 </element>
 <element name="J$1" library="jonsowman" package="SMA-EDGE" value="SMA_EDGE" x="27.432" y="22.606" rot="MR0"/>
 <element name="R1" library="passives-7351" package="R0603-N" value="" x="39.878" y="14.224" smashed="yes" rot="MR270">
-<attribute name="NAME" x="41.772921875" y="15.78290625" size="0.8128" layer="26" font="vector" ratio="13" rot="MR270"/>
+<attribute name="NAME" x="41.91" y="15.748" size="0.8128" layer="26" font="vector" ratio="13" rot="MR270"/>
 </element>
 <element name="J1" library="dtb" package="JST-2-TH" value="" x="6.858" y="15.748" rot="R117"/>
 <element name="C1" library="passives-7351" package="C0603-N" value="1u" x="12.446" y="21.844" smashed="yes" rot="R90">
-<attribute name="NAME" x="13.24290625" y="24.246921875" size="0.8128" layer="25" font="vector" ratio="13" rot="R180"/>
+<attribute name="NAME" x="13.208" y="24.384" size="0.8128" layer="25" font="vector" ratio="13" rot="R180"/>
 </element>
 <element name="U5" library="Mine" package="DFN6-L" value="HTU21D" x="32.512" y="4.318" rot="R270"/>
 <element name="JP1" library="SparkFun-Connectors" package="2X3_LOCK" value="AVR_SPI_PRG_62X3_LOCK" x="22.352" y="2.286" smashed="yes">
 <attribute name="VALUE" x="21.082" y="-0.889" size="1.27" layer="27"/>
 </element>
 <element name="U3" library="dtb" package="SOT23" value="MCP1700TT" x="8.89" y="21.844" smashed="yes" rot="R90">
-<attribute name="NAME" x="9.525" y="24.257" size="0.8128" layer="25" rot="R180"/>
+<attribute name="NAME" x="9.652" y="24.384" size="0.8128" layer="25" rot="R180"/>
 <attribute name="VALUE" x="12.065" y="19.939" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="C2" library="passives-7351" package="C0603-N" value="1u" x="11.43" y="17.78" smashed="yes" rot="R180">
-<attribute name="NAME" x="11.46490625" y="14.848921875" size="0.8128" layer="25" font="vector" ratio="13" rot="R180"/>
+<attribute name="NAME" x="11.43" y="14.732" size="0.8128" layer="25" font="vector" ratio="13" rot="R180"/>
 </element>
 <element name="U4" library="jonsowman" package="SOIC8" value="CN3083" x="16.51" y="11.938" smashed="yes" rot="R180">
 <attribute name="NAME" x="15.24" y="10.922" size="1.27" layer="25"/>
@@ -862,13 +862,13 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="6.254909375" y="8.812959375" size="1.27" layer="27" rot="R315"/>
 </element>
 <element name="R2" library="passives-7351" package="R0603-N" value="3k6" x="11.43" y="15.748" smashed="yes">
-<attribute name="NAME" x="11.46490625" y="19.420921875" size="0.8128" layer="25" font="vector" ratio="13" rot="R180"/>
+<attribute name="NAME" x="11.43" y="19.558" size="0.8128" layer="25" font="vector" ratio="13" rot="R180"/>
 </element>
 <element name="R3" library="passives-7351" package="R0603-N" value="100k" x="16.51" y="21.844" smashed="yes" rot="R90">
-<attribute name="NAME" x="17.30690625" y="24.246921875" size="0.8128" layer="25" font="vector" ratio="13" rot="R180"/>
+<attribute name="NAME" x="17.272" y="24.384" size="0.8128" layer="25" font="vector" ratio="13" rot="R180"/>
 </element>
 <element name="R4" library="passives-7351" package="R0603-N" value="100k" x="14.478" y="21.844" smashed="yes" rot="R270">
-<attribute name="NAME" x="15.27490625" y="24.246921875" size="0.8128" layer="25" font="vector" ratio="13" rot="R180"/>
+<attribute name="NAME" x="15.24" y="24.384" size="0.8128" layer="25" font="vector" ratio="13" rot="R180"/>
 </element>
 <element name="TP1" library="testpad" package="B1,27" value="PTR1B1,27" x="14.986" y="5.334" smashed="yes">
 <attribute name="TP_SIGNAL_NAME" value="" x="14.351" y="3.429" size="1" layer="37"/>
@@ -885,29 +885,29 @@ design rules under a new name.</description>
 <attribute name="NAME" x="20.574" y="2.286" size="0.8128" layer="25" font="vector" ratio="13" rot="R90"/>
 </element>
 <element name="R7" library="passives-7351" package="R0603-N" value="100k" x="14.478" y="18.034" smashed="yes" rot="R90">
-<attribute name="NAME" x="13.75090625" y="19.674921875" size="0.8128" layer="25" font="vector" ratio="13" rot="R180"/>
+<attribute name="NAME" x="13.716" y="19.558" size="0.8128" layer="25" font="vector" ratio="13" rot="R180"/>
 </element>
 <element name="R8" library="passives-7351" package="R0603-N" value="100k" x="16.51" y="18.034" smashed="yes" rot="R270">
-<attribute name="NAME" x="19.08490625" y="19.674921875" size="0.8128" layer="25" font="vector" ratio="13" rot="R180"/>
+<attribute name="NAME" x="19.05" y="19.558" size="0.8128" layer="25" font="vector" ratio="13" rot="R180"/>
 </element>
 <element name="U2" library="RHT03_DHT-22_AM2302" package="RHT03_DHT-22" value="" x="37.846" y="17.018" smashed="yes" rot="R90">
 <attribute name="PROD_ID" value="SEN-10167" x="37.846" y="17.018" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
 <attribute name="VALUE" x="40.346" y="11.018" size="1.27" layer="21" font="vector" rot="R90"/>
 </element>
 <element name="C3" library="passives-7351" package="C0603-N" value="100n" x="26.416" y="18.542" smashed="yes" rot="R180">
-<attribute name="NAME" x="28.077078125" y="19.33890625" size="0.8128" layer="25" font="vector" ratio="13" rot="R270"/>
+<attribute name="NAME" x="28.194" y="19.304" size="0.8128" layer="25" font="vector" ratio="13" rot="R270"/>
 </element>
 <element name="JP3" library="SparkFun-Connectors" package="1X04" value="" x="45.72" y="17.272" smashed="yes" rot="R240">
 <attribute name="VALUE" x="43.60536875" y="19.95935" size="1.27" layer="27" rot="R240"/>
 </element>
 <element name="C4" library="passives-7351" package="C0603-N" value="100n" x="36.83" y="5.588" smashed="yes">
-<attribute name="NAME" x="35.27109375" y="3.947078125" size="0.8128" layer="25" font="vector" ratio="13"/>
+<attribute name="NAME" x="35.306" y="3.81" size="0.8128" layer="25" font="vector" ratio="13"/>
 </element>
 <element name="R9" library="passives-7351" package="R0603-N" value="" x="41.91" y="17.78" smashed="yes" rot="MR270">
-<attribute name="NAME" x="41.11309375" y="20.182921875" size="0.8128" layer="26" font="vector" ratio="13" rot="MR180"/>
+<attribute name="NAME" x="41.148" y="20.32" size="0.8128" layer="26" font="vector" ratio="13" rot="MR180"/>
 </element>
 <element name="C5" library="passives-7351" package="C0603-N" value="100n" x="39.878" y="17.78" smashed="yes" rot="MR270">
-<attribute name="NAME" x="40.42090625" y="19.441078125" size="0.8128" layer="26" font="vector" ratio="13" rot="MR0"/>
+<attribute name="NAME" x="39.116" y="20.32" size="0.8128" layer="26" font="vector" ratio="13" rot="MR180"/>
 </element>
 </elements>
 <signals>
@@ -1327,15 +1327,6 @@ design rules under a new name.</description>
 <wire x1="20.574" y1="11.43" x2="20.936" y2="11.792" width="0.254" layer="1"/>
 <wire x1="21.6154" y1="11.792" x2="20.936" y2="11.792" width="0.254" layer="1"/>
 </signal>
-<signal name="N$4">
-<contactref element="U4" pad="2"/>
-<contactref element="R2" pad="2"/>
-<wire x1="12.23" y1="15.748" x2="12.611" y2="16.129" width="0.254" layer="1"/>
-<wire x1="12.611" y1="16.129" x2="16.637" y2="16.129" width="0.254" layer="1"/>
-<wire x1="17.145" y1="14.538" x2="17.018" y2="14.665" width="0.254" layer="1"/>
-<wire x1="17.018" y1="14.665" x2="17.018" y2="15.748" width="0.254" layer="1"/>
-<wire x1="17.018" y1="15.748" x2="16.637" y2="16.129" width="0.254" layer="1"/>
-</signal>
 <signal name="N$2">
 <contactref element="U4" pad="7"/>
 <contactref element="TP1" pad="TP"/>
@@ -1448,6 +1439,17 @@ design rules under a new name.</description>
 <wire x1="43.561" y1="10.672884375" x2="43.561" y2="10.668" width="0.254" layer="16"/>
 <wire x1="46.228" y1="19.05" x2="46.355" y2="19.05" width="0.254" layer="16"/>
 <wire x1="46.355" y1="19.05" x2="47.625" y2="17.78" width="0.254" layer="16"/>
+</signal>
+<signal name="ISET">
+<contactref element="U1" pad="26"/>
+<contactref element="U4" pad="2"/>
+<contactref element="R2" pad="2"/>
+<wire x1="12.23" y1="15.748" x2="12.611" y2="16.129" width="0.254" layer="1"/>
+<wire x1="12.611" y1="16.129" x2="16.637" y2="16.129" width="0.254" layer="1"/>
+<wire x1="17.145" y1="14.538" x2="17.018" y2="14.665" width="0.254" layer="1"/>
+<wire x1="17.018" y1="14.665" x2="17.018" y2="15.748" width="0.254" layer="1"/>
+<wire x1="17.018" y1="15.748" x2="16.637" y2="16.129" width="0.254" layer="1"/>
+<wire x1="17.145" y1="14.538" x2="21.6154" y2="14.192" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <errors>

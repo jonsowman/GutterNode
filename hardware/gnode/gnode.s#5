@@ -498,6 +498,7 @@ This is a footprint for an edge mount RF antenna. Works pretty well with SMA typ
 <rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
 <wire x1="-2.4" y1="1.2" x2="-2.4" y2="-1.2" width="0.254" layer="21"/>
 <wire x1="2.4" y1="1.2" x2="2.4" y2="-1.2" width="0.254" layer="21"/>
+<circle x="-1.9" y="-1" radius="0.22360625" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>

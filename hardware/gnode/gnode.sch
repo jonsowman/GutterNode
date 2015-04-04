@@ -3791,13 +3791,6 @@ Note: The AM2302 is a wired version of the DHT-22 which typically requires less 
 <label x="-38.1" y="66.04" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="U4" gate="G$1" pin="ISET"/>
-<pinref part="R2" gate="G$1" pin="P$2"/>
-<wire x1="129.54" y1="134.62" x2="137.16" y2="134.62" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="CH"/>
@@ -3900,6 +3893,18 @@ Note: The AM2302 is a wired version of the DHT-22 which typically requires less 
 <pinref part="C5" gate="G$1" pin="1"/>
 <wire x1="58.42" y1="-17.78" x2="58.42" y2="-15.24" width="0.1524" layer="91"/>
 <label x="58.42" y="-15.24" size="1.27" layer="95" rot="R90" xref="yes"/>
+</segment>
+</net>
+<net name="ISET" class="0">
+<segment>
+<pinref part="U1" gate="U$1" pin="PC3(ADC3)"/>
+<wire x1="12.7" y1="58.42" x2="15.24" y2="58.42" width="0.1524" layer="91"/>
+<label x="15.24" y="58.42" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="ISET"/>
+<pinref part="R2" gate="G$1" pin="P$2"/>
+<wire x1="129.54" y1="134.62" x2="137.16" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

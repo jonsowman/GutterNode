@@ -3327,7 +3327,7 @@ Note: The AM2302 is a wired version of the DHT-22 which typically requires less 
 <part name="JP1" library="SparkFun-Connectors" deviceset="AVR_SPI_PRG_6" device="2X3_LOCK"/>
 <part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="U$3" library="dtb" deviceset="MCP1700" device="TT"/>
+<part name="U3" library="dtb" deviceset="MCP1700" device="TT"/>
 <part name="C2" library="passives-7351" deviceset="CAPACITOR" device="0603-N" value="1u"/>
 <part name="U$4" library="jonsowman" deviceset="CN3083" device=""/>
 <part name="JP2" library="Mine" deviceset="M02" device="PTH"/>
@@ -3381,7 +3381,7 @@ Note: The AM2302 is a wired version of the DHT-22 which typically requires less 
 <instance part="JP1" gate="G$1" x="20.32" y="-15.24"/>
 <instance part="SUPPLY5" gate="G$1" x="33.02" y="-10.16"/>
 <instance part="GND9" gate="1" x="33.02" y="-22.86"/>
-<instance part="U$3" gate="G$1" x="-2.54" y="109.22"/>
+<instance part="U3" gate="G$1" x="-2.54" y="109.22"/>
 <instance part="C2" gate="G$1" x="-15.24" y="106.68"/>
 <instance part="U$4" gate="G$1" x="114.3" y="149.86"/>
 <instance part="JP2" gate="G$1" x="17.78" y="139.7"/>
@@ -3491,7 +3491,7 @@ Note: The AM2302 is a wired version of the DHT-22 which typically requires less 
 <wire x1="33.02" y1="-17.78" x2="33.02" y2="-20.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="GND"/>
+<pinref part="U3" gate="G$1" pin="GND"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="-2.54" y1="101.6" x2="-2.54" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="2"/>
@@ -3692,7 +3692,7 @@ Note: The AM2302 is a wired version of the DHT-22 which typically requires less 
 <wire x1="5.08" y1="109.22" x2="17.78" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="SUPPLY3" gate="G$1" pin="VCC"/>
 <junction x="17.78" y="109.22"/>
-<pinref part="U$3" gate="G$1" pin="OUT"/>
+<pinref part="U3" gate="G$1" pin="OUT"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="2"/>
@@ -3732,7 +3732,7 @@ Note: The AM2302 is a wired version of the DHT-22 which typically requires less 
 <wire x1="-15.24" y1="109.22" x2="-17.78" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="109.22" x2="-22.86" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="-22.86" y1="109.22" x2="-22.86" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="IN"/>
+<pinref part="U3" gate="G$1" pin="IN"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <junction x="-15.24" y="109.22"/>
 <wire x1="-17.78" y1="109.22" x2="-17.78" y2="111.76" width="0.1524" layer="91"/>
