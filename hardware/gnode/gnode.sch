@@ -3321,15 +3321,15 @@ Note: The AM2302 is a wired version of the DHT-22 which typically requires less 
 <part name="C1" library="passives-7351" deviceset="CAPACITOR" device="0603-N" value="1u"/>
 <part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="GND7" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="IC1" library="Mine" deviceset="HTU21D" device=""/>
+<part name="U5" library="Mine" deviceset="HTU21D" device=""/>
 <part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="JP1" library="SparkFun-Connectors" deviceset="AVR_SPI_PRG_6" device="2X3_LOCK"/>
 <part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="U$3" library="dtb" deviceset="MCP1700" device="TT"/>
+<part name="U3" library="dtb" deviceset="MCP1700" device="TT"/>
 <part name="C2" library="passives-7351" deviceset="CAPACITOR" device="0603-N" value="1u"/>
-<part name="U$4" library="jonsowman" deviceset="CN3083" device=""/>
+<part name="U4" library="jonsowman" deviceset="CN3083" device=""/>
 <part name="JP2" library="Mine" deviceset="M02" device="PTH"/>
 <part name="GND10" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND11" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -3350,6 +3350,9 @@ Note: The AM2302 is a wired version of the DHT-22 which typically requires less 
 <part name="C3" library="passives-7351" deviceset="CAPACITOR" device="0603-N" value="100n"/>
 <part name="JP3" library="SparkFun-Connectors" deviceset="M04" device="PTH"/>
 <part name="C4" library="passives-7351" deviceset="CAPACITOR" device="0603-N" value="100n"/>
+<part name="R9" library="passives-7351" deviceset="RESISTOR" device="0603-N"/>
+<part name="C5" library="passives-7351" deviceset="CAPACITOR" device="0603-N" value="100n"/>
+<part name="GND14" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3372,15 +3375,15 @@ Note: The AM2302 is a wired version of the DHT-22 which typically requires less 
 <instance part="C1" gate="G$1" x="17.78" y="106.68"/>
 <instance part="SUPPLY3" gate="G$1" x="17.78" y="109.22"/>
 <instance part="GND7" gate="1" x="17.78" y="93.98"/>
-<instance part="IC1" gate="G$1" x="142.24" y="-10.16"/>
+<instance part="U5" gate="G$1" x="142.24" y="-10.16"/>
 <instance part="SUPPLY4" gate="G$1" x="147.32" y="15.24"/>
 <instance part="GND8" gate="1" x="147.32" y="-27.94"/>
 <instance part="JP1" gate="G$1" x="20.32" y="-15.24"/>
 <instance part="SUPPLY5" gate="G$1" x="33.02" y="-10.16"/>
 <instance part="GND9" gate="1" x="33.02" y="-22.86"/>
-<instance part="U$3" gate="G$1" x="-2.54" y="109.22"/>
+<instance part="U3" gate="G$1" x="-2.54" y="109.22"/>
 <instance part="C2" gate="G$1" x="-15.24" y="106.68"/>
-<instance part="U$4" gate="G$1" x="114.3" y="149.86"/>
+<instance part="U4" gate="G$1" x="114.3" y="149.86"/>
 <instance part="JP2" gate="G$1" x="17.78" y="139.7"/>
 <instance part="GND10" gate="1" x="33.02" y="142.24" rot="R90"/>
 <instance part="GND11" gate="1" x="114.3" y="116.84"/>
@@ -3398,9 +3401,18 @@ Note: The AM2302 is a wired version of the DHT-22 which typically requires less 
 <instance part="R7" gate="G$1" x="76.2" y="101.6" rot="R90"/>
 <instance part="R8" gate="G$1" x="76.2" y="91.44" rot="R90"/>
 <instance part="U2" gate="G$1" x="142.24" y="58.42"/>
-<instance part="C3" gate="G$1" x="-40.64" y="48.26"/>
+<instance part="C3" gate="G$1" x="-40.64" y="48.26" smashed="yes">
+<attribute name="NAME" x="-38.1" y="48.26" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-38.1" y="43.18" size="1.778" layer="96"/>
+</instance>
 <instance part="JP3" gate="G$1" x="93.98" y="-15.24" rot="R180"/>
 <instance part="C4" gate="G$1" x="157.48" y="-7.62"/>
+<instance part="R9" gate="G$1" x="71.12" y="-20.32" rot="R90"/>
+<instance part="C5" gate="G$1" x="58.42" y="-20.32" smashed="yes">
+<attribute name="NAME" x="60.96" y="-20.32" size="1.778" layer="95"/>
+<attribute name="VALUE" x="60.96" y="-25.4" size="1.778" layer="96"/>
+</instance>
+<instance part="GND14" gate="1" x="58.42" y="-30.48"/>
 </instances>
 <busses>
 </busses>
@@ -3464,7 +3476,7 @@ Note: The AM2302 is a wired version of the DHT-22 which typically requires less 
 <wire x1="17.78" y1="96.52" x2="17.78" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="GND"/>
+<pinref part="U5" gate="G$1" pin="GND"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 <wire x1="147.32" y1="-22.86" x2="147.32" y2="-25.4" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="2"/>
@@ -3479,7 +3491,7 @@ Note: The AM2302 is a wired version of the DHT-22 which typically requires less 
 <wire x1="33.02" y1="-17.78" x2="33.02" y2="-20.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="GND"/>
+<pinref part="U3" gate="G$1" pin="GND"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="-2.54" y1="101.6" x2="-2.54" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="2"/>
@@ -3494,7 +3506,7 @@ Note: The AM2302 is a wired version of the DHT-22 which typically requires less 
 <wire x1="30.48" y1="142.24" x2="25.4" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="GND"/>
+<pinref part="U4" gate="G$1" pin="GND"/>
 <pinref part="GND11" gate="1" pin="GND"/>
 <wire x1="114.3" y1="124.46" x2="114.3" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="P$1"/>
@@ -3502,7 +3514,7 @@ Note: The AM2302 is a wired version of the DHT-22 which typically requires less 
 <wire x1="137.16" y1="124.46" x2="137.16" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="121.92" x2="114.3" y2="121.92" width="0.1524" layer="91"/>
 <junction x="114.3" y="121.92"/>
-<pinref part="U$4" gate="G$1" pin="TEMP"/>
+<pinref part="U4" gate="G$1" pin="TEMP"/>
 <wire x1="129.54" y1="139.7" x2="142.24" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="139.7" x2="142.24" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="121.92" x2="137.16" y2="121.92" width="0.1524" layer="91"/>
@@ -3526,6 +3538,11 @@ Note: The AM2302 is a wired version of the DHT-22 which typically requires less 
 <pinref part="JP3" gate="G$1" pin="2"/>
 <wire x1="88.9" y1="-15.24" x2="86.36" y2="-15.24" width="0.1524" layer="91"/>
 <label x="86.36" y="-15.24" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="C5" gate="G$1" pin="2"/>
+<wire x1="58.42" y1="-25.4" x2="58.42" y2="-27.94" width="0.1524" layer="91"/>
+<pinref part="GND14" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -3675,7 +3692,7 @@ Note: The AM2302 is a wired version of the DHT-22 which typically requires less 
 <wire x1="5.08" y1="109.22" x2="17.78" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="SUPPLY3" gate="G$1" pin="VCC"/>
 <junction x="17.78" y="109.22"/>
-<pinref part="U$3" gate="G$1" pin="OUT"/>
+<pinref part="U3" gate="G$1" pin="OUT"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="2"/>
@@ -3692,7 +3709,7 @@ Note: The AM2302 is a wired version of the DHT-22 which typically requires less 
 <pinref part="SUPPLY8" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="VDD"/>
+<pinref part="U5" gate="G$1" pin="VDD"/>
 <pinref part="SUPPLY4" gate="G$1" pin="VCC"/>
 <wire x1="147.32" y1="5.08" x2="147.32" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="10.16" x2="147.32" y2="15.24" width="0.1524" layer="91"/>
@@ -3715,7 +3732,7 @@ Note: The AM2302 is a wired version of the DHT-22 which typically requires less 
 <wire x1="-15.24" y1="109.22" x2="-17.78" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="109.22" x2="-22.86" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="-22.86" y1="109.22" x2="-22.86" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="IN"/>
+<pinref part="U3" gate="G$1" pin="IN"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <junction x="-15.24" y="109.22"/>
 <wire x1="-17.78" y1="109.22" x2="-17.78" y2="111.76" width="0.1524" layer="91"/>
@@ -3723,10 +3740,10 @@ Note: The AM2302 is a wired version of the DHT-22 which typically requires less 
 <label x="-17.78" y="111.76" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="BATT"/>
+<pinref part="U4" gate="G$1" pin="BATT"/>
 <wire x1="129.54" y1="149.86" x2="134.62" y2="149.86" width="0.1524" layer="91"/>
 <label x="137.16" y="149.86" size="1.27" layer="95" xref="yes"/>
-<pinref part="U$4" gate="G$1" pin="FB"/>
+<pinref part="U4" gate="G$1" pin="FB"/>
 <wire x1="134.62" y1="149.86" x2="137.16" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="154.94" x2="134.62" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="154.94" x2="134.62" y2="149.86" width="0.1524" layer="91"/>
@@ -3740,7 +3757,7 @@ Note: The AM2302 is a wired version of the DHT-22 which typically requires less 
 </net>
 <net name="SHT_SCK" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="SCK"/>
+<pinref part="U5" gate="G$1" pin="SCK"/>
 <wire x1="132.08" y1="-7.62" x2="129.54" y2="-7.62" width="0.1524" layer="91"/>
 <label x="129.54" y="-7.62" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -3752,7 +3769,7 @@ Note: The AM2302 is a wired version of the DHT-22 which typically requires less 
 </net>
 <net name="SHT_DATA" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="DATA"/>
+<pinref part="U5" gate="G$1" pin="DATA"/>
 <wire x1="132.08" y1="-10.16" x2="129.54" y2="-10.16" width="0.1524" layer="91"/>
 <label x="129.54" y="-10.16" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -3776,14 +3793,14 @@ Note: The AM2302 is a wired version of the DHT-22 which typically requires less 
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="ISET"/>
+<pinref part="U4" gate="G$1" pin="ISET"/>
 <pinref part="R2" gate="G$1" pin="P$2"/>
 <wire x1="129.54" y1="134.62" x2="137.16" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="CH"/>
+<pinref part="U4" gate="G$1" pin="CH"/>
 <pinref part="TP1" gate="G$1" pin="TP"/>
 <wire x1="93.98" y1="144.78" x2="96.52" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="P$1"/>
@@ -3793,7 +3810,7 @@ Note: The AM2302 is a wired version of the DHT-22 which typically requires less 
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="OK"/>
+<pinref part="U4" gate="G$1" pin="OK"/>
 <pinref part="TP2" gate="G$1" pin="TP"/>
 <wire x1="93.98" y1="139.7" x2="96.52" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="P$2"/>
@@ -3808,7 +3825,7 @@ Note: The AM2302 is a wired version of the DHT-22 which typically requires less 
 <label x="27.94" y="139.7" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="VIN"/>
+<pinref part="U4" gate="G$1" pin="VIN"/>
 <wire x1="114.3" y1="162.56" x2="114.3" y2="165.1" width="0.1524" layer="91"/>
 <label x="114.3" y="165.1" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
@@ -3857,6 +3874,11 @@ Note: The AM2302 is a wired version of the DHT-22 which typically requires less 
 <wire x1="88.9" y1="-17.78" x2="86.36" y2="-17.78" width="0.1524" layer="91"/>
 <label x="86.36" y="-17.78" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="R9" gate="G$1" pin="P$2"/>
+<wire x1="71.12" y1="-15.24" x2="71.12" y2="-12.7" width="0.1524" layer="91"/>
+<label x="71.12" y="-12.7" size="1.27" layer="95" rot="R90" xref="yes"/>
+</segment>
 </net>
 <net name="GPIO0" class="0">
 <segment>
@@ -3868,6 +3890,16 @@ Note: The AM2302 is a wired version of the DHT-22 which typically requires less 
 <pinref part="JP3" gate="G$1" pin="4"/>
 <wire x1="88.9" y1="-20.32" x2="86.36" y2="-20.32" width="0.1524" layer="91"/>
 <label x="86.36" y="-20.32" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R9" gate="G$1" pin="P$1"/>
+<wire x1="71.12" y1="-25.4" x2="71.12" y2="-27.94" width="0.1524" layer="91"/>
+<label x="71.12" y="-27.94" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="C5" gate="G$1" pin="1"/>
+<wire x1="58.42" y1="-17.78" x2="58.42" y2="-15.24" width="0.1524" layer="91"/>
+<label x="58.42" y="-15.24" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 </nets>
