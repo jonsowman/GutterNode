@@ -883,7 +883,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="23.368" y="19.812" size="1.016" layer="25" font="vector" ratio="14" rot="R270"/>
 </element>
 <element name="R8" library="passives-7351" package="R0603-N" value="100k" x="18.542" y="18.034" smashed="yes" rot="R270">
-<attribute name="NAME" x="24.384" y="19.812" size="1.016" layer="25" font="vector" ratio="14" rot="R270"/>
+<attribute name="NAME" x="24.638" y="19.812" size="1.016" layer="25" font="vector" ratio="14" rot="R270"/>
 </element>
 <element name="U2" library="RHT03_DHT-22_AM2302" package="RHT03_DHT-22" value="" x="37.846" y="17.018" smashed="yes" rot="R90">
 <attribute name="PROD_ID" value="SEN-10167" x="37.846" y="17.018" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
@@ -915,7 +915,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="13.462" y="14.732" size="1.016" layer="25" font="vector" ratio="14" rot="R180"/>
 </element>
 <element name="C7" library="passives-7351" package="C0603-N" value="22u" x="10.414" y="18.034" smashed="yes" rot="R90">
-<attribute name="NAME" x="19.558" y="19.812" size="1.016" layer="25" font="vector" ratio="14" rot="R270"/>
+<attribute name="NAME" x="9.398" y="18.542" size="1.016" layer="25" font="vector" ratio="14" rot="R90"/>
 </element>
 </elements>
 <signals>

@@ -32,7 +32,7 @@
 <layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -911,8 +911,12 @@ design rules under a new name.</description>
 <element name="JP4" library="Mine" package="1X02" value="" x="38.354" y="23.114" smashed="yes">
 <attribute name="VALUE" x="37.084" y="19.939" size="1.27" layer="27"/>
 </element>
-<element name="C6" library="passives-7351" package="C0603-N" value="4u7" x="12.446" y="11.938" rot="R90"/>
-<element name="C7" library="passives-7351" package="C0603-N" value="22u" x="10.414" y="18.034" rot="R90"/>
+<element name="C6" library="passives-7351" package="C0603-N" value="4u7" x="12.446" y="11.938" smashed="yes" rot="R90">
+<attribute name="NAME" x="13.462" y="14.732" size="1.016" layer="25" font="vector" ratio="14" rot="R180"/>
+</element>
+<element name="C7" library="passives-7351" package="C0603-N" value="22u" x="10.414" y="18.034" smashed="yes" rot="R90">
+<attribute name="NAME" x="9.94090625" y="19.420921875" size="1.016" layer="25" font="vector" ratio="14" rot="R180"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">

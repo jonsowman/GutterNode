@@ -32,7 +32,7 @@
 <layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -183,6 +183,8 @@
 <text x="43.18" y="15.24" size="1.27" layer="22" font="vector" ratio="14" rot="MR0">-</text>
 <text x="10.16" y="10.922" size="1.778" layer="21" font="vector" ratio="15">+</text>
 <text x="7.62" y="7.874" size="1.27" layer="21" font="vector" ratio="15" rot="R315">PV</text>
+<text x="35.814" y="3.048" size="1.27" layer="22" font="vector" ratio="15" rot="MR0">REV A</text>
+<text x="34.544" y="9.652" size="1.778" layer="21" font="vector" ratio="15" rot="R90">GutterNode</text>
 </plain>
 <libraries>
 <library name="hoperf">

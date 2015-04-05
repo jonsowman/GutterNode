@@ -32,7 +32,7 @@
 <layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -911,8 +911,12 @@ design rules under a new name.</description>
 <element name="JP4" library="Mine" package="1X02" value="" x="38.354" y="23.114" smashed="yes">
 <attribute name="VALUE" x="37.084" y="19.939" size="1.27" layer="27"/>
 </element>
-<element name="C6" library="passives-7351" package="C0603-N" value="4u7" x="12.446" y="11.938" rot="R90"/>
-<element name="C7" library="passives-7351" package="C0603-N" value="22u" x="10.414" y="18.034" rot="R90"/>
+<element name="C6" library="passives-7351" package="C0603-N" value="4u7" x="12.446" y="11.938" smashed="yes" rot="R90">
+<attribute name="NAME" x="11.546921875" y="10.37909375" size="1.016" layer="25" font="vector" ratio="14" rot="R90"/>
+</element>
+<element name="C7" library="passives-7351" package="C0603-N" value="22u" x="10.414" y="18.034" smashed="yes" rot="R90">
+<attribute name="NAME" x="9.514921875" y="16.47509375" size="1.016" layer="25" font="vector" ratio="14" rot="R90"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -1297,7 +1301,7 @@ design rules under a new name.</description>
 <wire x1="11.43" y1="20.688" x2="11.43" y2="20.066" width="0.254" layer="1"/>
 <contactref element="U4" pad="8"/>
 <contactref element="U4" pad="5"/>
-<via x="20.574" y="6.858" extent="1-16" drill="0.508"/>
+<via x="20.574" y="6.858" extent="1-16" drill="0.381"/>
 <wire x1="20.574" y1="6.858" x2="20.574" y2="6.35" width="0.254" layer="16"/>
 <wire x1="20.574" y1="6.35" x2="20.828" y2="6.096" width="0.254" layer="16"/>
 <wire x1="20.828" y1="6.096" x2="23.114" y2="6.096" width="0.254" layer="16"/>
@@ -1308,7 +1312,7 @@ design rules under a new name.</description>
 <wire x1="21.844" y1="3.556" x2="21.336" y2="3.048" width="0.254" layer="16"/>
 <wire x1="21.336" y1="3.048" x2="21.082" y2="2.794" width="0.254" layer="16"/>
 <wire x1="21.082" y1="2.794" x2="20.574" y2="2.794" width="0.254" layer="16"/>
-<via x="20.574" y="2.794" extent="1-16" drill="0.508"/>
+<via x="20.574" y="2.794" extent="1-16" drill="0.381"/>
 <wire x1="17.145" y1="2.159" x2="16.637" y2="2.159" width="0.254" layer="1"/>
 <wire x1="14.478" y1="3.81" x2="13.97" y2="4.318" width="0.254" layer="1"/>
 <wire x1="13.97" y1="4.318" x2="13.208" y2="4.318" width="0.254" layer="1"/>
