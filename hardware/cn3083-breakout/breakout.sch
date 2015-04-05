@@ -1983,6 +1983,27 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <circle x="0" y="0" radius="2.85" width="0.1524" layer="21"/>
 <pad name="B5,5" x="0" y="0" drill="5.5" diameter="9"/>
 </package>
+<package name="JST-2-TH">
+<pad name="1" x="1" y="0" drill="0.8" shape="octagon"/>
+<pad name="2" x="-1" y="0" drill="0.8" shape="octagon"/>
+<wire x1="3" y1="-1.5" x2="0.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="-1.5" x2="-3" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="3" y1="0" x2="3" y2="0.5" width="0.127" layer="21"/>
+<wire x1="3" y1="3" x2="3" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-3" y1="-1.5" x2="-3" y2="3" width="0.127" layer="21"/>
+<wire x1="0" y1="2.5" x2="-2.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="0" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="3" y1="3" x2="-3" y2="3" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="2.5" x2="-2.5" y2="-1" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-1" x2="-0.5" y2="-1" width="0.127" layer="21"/>
+<wire x1="0.5" y1="-1" x2="2.5" y2="-1" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-1" x2="2.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="-1" x2="-0.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="0.5" y1="-1.5" x2="0.5" y2="-1" width="0.127" layer="21"/>
+<text x="0.5" y="-3" size="1.27" layer="21" font="vector" ratio="12">+</text>
+<text x="-1.5" y="-3" size="1.27" layer="21" font="vector" ratio="12">-</text>
+<wire x1="0" y1="2.5" x2="0" y2="2" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MOUNT-PAD">
@@ -1994,6 +2015,32 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <text x="2.794" y="0.5842" size="1.778" layer="95">&gt;NAME</text>
 <text x="2.794" y="-2.4638" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="MOUNT" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+</symbol>
+<symbol name="JST_2MM_MALE_TH">
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="1.778" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="1.778" x2="-2.54" y2="3.302" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="3.302" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="3.302" width="0.254" layer="94"/>
+<wire x1="5.08" y1="3.302" x2="5.08" y2="1.778" width="0.254" layer="94"/>
+<wire x1="5.08" y1="1.778" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="4.064" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="4.064" y1="-2.54" x2="4.064" y2="0" width="0.254" layer="94"/>
+<wire x1="4.064" y1="0" x2="-1.524" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.524" y1="0" x2="-1.524" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-1.524" y2="-2.54" width="0.254" layer="94"/>
+<pin name="-" x="0" y="-5.08" visible="off" length="middle" rot="R90"/>
+<pin name="+" x="2.54" y="-5.08" visible="off" length="middle" rot="R90"/>
+<wire x1="-2.54" y1="1.778" x2="-1.778" y2="1.778" width="0.254" layer="94"/>
+<wire x1="-1.778" y1="1.778" x2="-1.778" y2="3.302" width="0.254" layer="94"/>
+<wire x1="-1.778" y1="3.302" x2="-2.54" y2="3.302" width="0.254" layer="94"/>
+<wire x1="5.08" y1="1.778" x2="4.318" y2="1.778" width="0.254" layer="94"/>
+<wire x1="4.318" y1="1.778" x2="4.318" y2="3.302" width="0.254" layer="94"/>
+<wire x1="4.318" y1="3.302" x2="5.08" y2="3.302" width="0.254" layer="94"/>
+<wire x1="2.032" y1="1.016" x2="3.048" y2="1.016" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0.508" x2="2.54" y2="1.524" width="0.254" layer="94"/>
+<wire x1="0" y1="0.508" x2="0" y2="1.524" width="0.254" layer="94"/>
+<text x="-2.54" y="5.842" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2085,6 +2132,24 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 </device>
 </devices>
 </deviceset>
+<deviceset name="JST_2MM_MALE_TH" prefix="J" uservalue="yes">
+<description>Mates to single-cell LiPo batteries.&lt;br&gt;
+CONN-08352</description>
+<gates>
+<gate name="G$1" symbol="JST_2MM_MALE_TH" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="JST-2-TH">
+<connects>
+<connect gate="G$1" pin="+" pad="1"/>
+<connect gate="G$1" pin="-" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -2115,7 +2180,7 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="C1" library="passives-7351" deviceset="CAPACITOR" device="0603-N" value="22u"/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C2" library="passives-7351" deviceset="CAPACITOR" device="0603-N" value="4.7u"/>
-<part name="H3" library="dtb" deviceset="MOUNT-PAD-ROUND" device="3.0"/>
+<part name="J1" library="dtb" deviceset="JST_2MM_MALE_TH" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2140,7 +2205,7 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <instance part="C1" gate="G$1" x="43.18" y="73.66"/>
 <instance part="GND4" gate="1" x="43.18" y="63.5"/>
 <instance part="C2" gate="G$1" x="137.16" y="71.12"/>
-<instance part="H3" gate="G$1" x="53.34" y="22.86"/>
+<instance part="J1" gate="G$1" x="35.56" y="43.18" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -2203,6 +2268,11 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <wire x1="43.18" y1="68.58" x2="43.18" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="-"/>
+<wire x1="40.64" y1="43.18" x2="43.18" y2="43.18" width="0.1524" layer="91"/>
+<label x="43.18" y="43.18" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="VBATT" class="0">
 <segment>
@@ -2224,6 +2294,11 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <junction x="127" y="83.82"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="137.16" y1="78.74" x2="137.16" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="+"/>
+<wire x1="40.64" y1="45.72" x2="43.18" y2="45.72" width="0.1524" layer="91"/>
+<label x="43.18" y="45.72" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$6" class="0">
